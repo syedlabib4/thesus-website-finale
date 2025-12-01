@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thesusoutdoors | Shop </title>
+    <link rel="icon" href="./pictures/titlelogo.webp" type="image/png">
+    
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+        <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./Shop.css">
+  </head>
+
+  <body>
+    <header>
+    <div id="navbar"></div>
+
+      <h4>We're Making Room - 50% 0ff.</h4>
+    </header>
+
+    <section class="filter-sort">
+      <div class="options">
+        <div class="filter">
+          <label for="filter">Filter :</label>
+          <select name="filter" id="filter">
+            <option value="all">All Products</option>
+            <option value="new">New Arrivals</option>
+            <option value="clothing">Clothing</option>
+            <option value="accessories">Accessories</option>
+            <option value="footwear">Footwear</option>
+          </select>
+        </div>
+
+        <div class="sort">
+          <label for="sort">Sort By :</label>
+          <select name="sort" id="sort">
+            <option value="featured">Featured</option>
+            <option value="newest">Newest</option>
+            <option value="price-low-high">Price: Low to High</option>
+            <option value="price-high-low">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="product">
+      <div class="cards-container" id="products"></div>
+    </section>
+
+    
+
+  <section class="second-last-text">
+    <h2>Something New is Coming. Join the Waitlist.</h2>
+    <p>Subscribe to our newsletter. Get waitlisted for what is to come.</p>
+  </section>
+  <div id="footer"></div>
+
+    <script src="./script.js"></script>
+    <script src="./component.js"></script>
+<script>
+  loadComponent("navbar", "navbar.html");
+  loadComponent("footer", "footer.html");
+</script>
+  </body>
+</html>
